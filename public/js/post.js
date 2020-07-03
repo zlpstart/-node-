@@ -1,0 +1,3 @@
+function toHome(){
+    window.open('/')
+}

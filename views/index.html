@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/public/js/main.js"></script>
+</head>
+<body>
+    <h1>说你想说的话</h1>
+    <button onclick="toPost()">发表留言</button>
+    <ul>
+        {{each comments}}
+        <li class="list-group-item">{{$value.name}}说:{{$value.message}}<span class="pull-right">{{$value.dateTime}}</span></li>
+        {{/each}}
+    </ul>
+</body>
+</html>
